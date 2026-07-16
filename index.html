@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Strategy Digital</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================
+         TOP BAR
+    ========================== -->
+
+    <header id="topBar">
+
+        <h1>Grand Strategy Digital</h1>
+
+        <div id="turnInfo">
+            Turn:
+            <span id="turnNumber">1</span>
+        </div>
+
+    </header>
+
+    <!-- =========================
+         MAIN LAYOUT
+    ========================== -->
+
+    <main id="game">
+
+        <!-- ==========
+             GAME BOARD
+        =========== -->
+
+        <section id="boardContainer">
+
+            <canvas id="gameCanvas"></canvas>
+
+        </section>
+
+        <!-- ==========
+             SIDE PANEL
+        =========== -->
+
+        <aside id="sidePanel">
+
+            <h2>Selection</h2>
+
+            <div id="selectionInfo">
+
+                Nothing selected.
+
+            </div>
+
+            <hr>
+
+            <h2>Current Player</h2>
+
+            <div id="playerInfo">
+
+                Blue
+
+            </div>
+
+            <hr>
+
+            <h2>Resources</h2>
+
+            <table>
+
+                <tr>
+                    <td>Gold</td>
+                    <td id="goldValue">0</td>
+                </tr>
+
+                <tr>
+                    <td>Steel</td>
+                    <td id="steelValue">0</td>
+                </tr>
+
+                <tr>
+                    <td>Weapons</td>
+                    <td id="weaponValue">0</td>
+                </tr>
+
+            </table>
+
+            <hr>
+
+            <h2>Planned Actions</h2>
+
+            <div id="plannedMoves">
+
+                No actions planned.
+
+            </div>
+
+            <button id="executeTurn">
+
+                Execute Turn
+
+            </button>
+
+        </aside>
+
+    </main>
+
+    <!-- =========================
+         STATUS BAR
+    ========================== -->
+
+    <footer id="statusBar">
+
+        Ready.
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
