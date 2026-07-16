@@ -1,0 +1,256 @@
+/* ===========================================================
+   GRAND STRATEGY DIGITAL
+   Version 0.0.1
+   File 2 - Part 1
+=========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#2e2e2e;
+
+    color:white;
+}
+
+/* ===========================================================
+   TOP BAR
+=========================================================== */
+
+#topBar{
+
+    height:70px;
+
+    background:#1f1f1f;
+
+    border-bottom:3px solid #444;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 25px;
+}
+
+#topBar h1{
+
+    font-size:28px;
+
+    letter-spacing:1px;
+}
+
+#turnInfo{
+
+    font-size:22px;
+
+    font-weight:bold;
+}
+
+/* ===========================================================
+   MAIN LAYOUT
+=========================================================== */
+
+#game{
+
+    display:flex;
+
+    width:100%;
+
+    height:calc(100vh - 110px);
+}
+
+/* ===========================================================
+   BOARD
+=========================================================== */
+
+#boardContainer{
+
+    flex:1;
+
+    background:#5c7d42;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+#gameCanvas{
+
+    display:block;
+
+    width:100%;
+
+    height:100%;
+
+    cursor:pointer;
+
+    background:#5c7d42;
+}
+
+/* ===========================================================
+   SIDE PANEL
+=========================================================== */
+
+#sidePanel{
+
+    width:330px;
+
+    background:#252525;
+
+    border-left:3px solid #444;
+
+    overflow-y:auto;
+
+    padding:20px;
+}
+
+#sidePanel h2{
+
+    margin-bottom:10px;
+
+    font-size:20px;
+}
+
+#sidePanel hr{
+
+    margin:20px 0;
+
+    border:none;
+
+    border-top:2px solid #444;
+}
+
+#selectionInfo{
+
+    min-height:80px;
+
+    line-height:1.5;
+}
+
+#playerInfo{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    color:#66aaff;
+}
+
+/* ===========================================================
+   TABLES
+=========================================================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+}
+
+td{
+
+    padding:6px;
+}
+
+td:last-child{
+
+    text-align:right;
+
+    font-weight:bold;
+}
+
+/* ===========================================================
+   BUTTONS
+=========================================================== */
+
+button{
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:6px;
+
+    background:#4d7a3f;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+button:hover{
+
+    background:#66994d;
+}
+
+button:active{
+
+    transform:scale(.98);
+}
+
+/* ===========================================================
+   STATUS BAR
+=========================================================== */
+
+#statusBar{
+
+    height:40px;
+
+    background:#1f1f1f;
+
+    border-top:3px solid #444;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-left:15px;
+
+    font-size:15px;
+}
+
+/* ===========================================================
+   SCROLLBAR
+=========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+
+    background:#222;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#555;
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#777;
+}
